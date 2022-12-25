@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact us</title>
+
+        <!-- custome-style -->
+        <link rel="stylesheet" href="/assets/css/signup-style.css">
+
+        <!-- fav-icon -->
+        <link rel="shortcut icon" href="/assets/images/favicon/jackpot-usa/jackpot-usa-logo-3.png" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRE5YWMYGB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-JRE5YWMYGB');
+        </script>
+
+
+
+    </head>
+
+    <body>
+
+        <div class="container main">
+            <!-- <form name="contact" netlify>
+                <p>
+                    <label>Name <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form> -->
+            <header>Contact us</header>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="field claim-field">
+                    <!-- <label for="promo">Enter your name</label> -->
+                    <div class="input-field">
+                        <input id="claim" type="text" name="name" placeholder="@your name" class="claim"></input>
+                    </div>
+                    <div class="input-field">
+                        <input id="claim" type='email' name="email" placeholder="@your email" class="claim"></input>
+                    </div>
+                    <span class="error email-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Please enter your name</p>
+                    </span>
+                </div>
+                <div class="field massage-field">
+                    <textarea name="message" id="" placeholder="your message"></textarea>
+                </div>
+
+                <div class="input-field button">
+                    <input type="submit" value="Send" class='active-claim custom-btn btn-4 ' />
+                </div>
+            </form>
+        </div>
+
+        <!-- custome-js -->
+
+        <script src=" ../assets/js/signup.js"> </script>
+        <script src="../assets/js/notification.js">
+
+        </script>
+
+
+    </body>
+
+</html>

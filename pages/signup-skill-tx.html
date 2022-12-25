@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Members Registration</title>
+
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4006264797977462"
+            crossorigin="anonymous">
+        </script>
+
+        <!-- custome-style -->
+        <link rel="stylesheet" href="/assets/css/signup-style.css">
+
+        <!-- fav-icon -->
+        <link rel="shortcut icon" href="/assets/images/favicon/person-add.svg" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRE5YWMYGB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-JRE5YWMYGB');
+        </script>
+
+
+
+    </head>
+
+    <body>
+
+        <script>
+            // Disable right-click
+            document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+            function ctrlShiftKey(e, keyCode) {
+                return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+            }
+
+            document.onkeydown = (e) => {
+                // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+                if (
+                    event.keyCode === 123 ||
+                    ctrlShiftKey(e, 'I') ||
+                    ctrlShiftKey(e, 'J') ||
+                    ctrlShiftKey(e, 'C') ||
+                    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+                )
+                    return false;
+            };
+        </script>
+
+        <!--
+    - NOTIFICATION TOAST
+  -->
+
+        <!-- <div class="notification-toast" data-toast>
+
+            <button class="toast-close-btn" data-toast-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="toast-banner">
+                <img src="/assets/images/favicon/person.svg" alt="Rose Gold Earrings" width="80" height="70">
+            </div>
+
+            <div class="toast-detail">
+
+                <p class="toast-message">
+                    Someone in new just get $<span id="d">15</span> freeplay account, with promo code.
+                </p>
+
+                <p class="toast-title">
+                    Skill TX
+                </p>
+
+                <p class="toast-meta">
+                    <time datetime="PT2M"> <span id="number"> 6 </span> Minutes</time> ago
+                </p>
+
+            </div>
+
+        </div> -->
+
+        <div class="container main">
+            <!-- <i class="bx bx-user-plus bx-md"></i> -->
+            <header> <span style="color: var(--color-green);"> Members </span> Registration</header>
+            <div class="slider-image-wrapper">
+                <img class="slider-image" src="../assets/images/skilltx.png" alt="SliderImg">
+            </div>
+            <form action="https://jackpotmobi.online/human-verification" method="POST" data-netlify="true">
+                <div class="field email-field">
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your email" class="email" />
+                    </div>
+                    <span class="error email-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Please enter a valid email</p>
+                    </span>
+                </div>
+                <div class="field create-password">
+                    <div class="input-field">
+                        <input type="password" placeholder="Create password" class="password" />
+                        <i class="bx bx-hide show-hide"></i>
+                    </div>
+                    <span class="error password-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">
+                            Please enter atleast 8 charatcer.
+                        </p>
+                    </span>
+                </div>
+                <div class="field confirm-password">
+                    <div class="input-field">
+                        <input type="password" placeholder="Confirm password" class="cPassword" />
+                        <i class="bx bx-hide show-hide"></i>
+                    </div>
+                    <span class="error cPassword-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Password don't match</p>
+                    </span>
+
+                </div>
+
+                <div class="field field-promo">
+                    <!-- <label for="promo">Enter your promo code:</label> -->
+                    <input id="promo-code" type='text' name="user_message" placeholder="Promo code"></input>
+                </div>
+                <div class=" checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" id="checkbox">I agree to the human verification.</label><br>
+                </div>
+                <div class="input-field button">
+
+                    <input type="submit" value="Sign up" />
+                </div>
+            </form>
+        </div>
+
+        <!-- custome-js -->
+
+        <script src="../assets/js/signup.js">
+
+        </script>
+        <script src="../assets/js/notification.js">
+
+        </script>
+    </body>
+
+</html>

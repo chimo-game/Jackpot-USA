@@ -1,49 +1,124 @@
-var pwd = document.getElementById('pwd');
-var eye = document.getElementById('eye');
+$(document).ready(function () {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                    stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+            last_name: {
+                validators: {
+                    stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                    stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                    stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                    zipCode: {
+                        country: 'US',
+                        message: 'Please supply a vaild zip code'
+                    }
+                }
+            },
+            comment: {
+                validators: {
+                    stringLength: {
+                        min: 10,
+                        max: 200,
+                        message: 'Please enter at least 10 characters and no more than 200'
+                    },
+                    notEmpty: {
+                        message: 'Please supply a description of your project'
+                    }
+                }
+            }
+        }
+    })
+        .on('success.form.bv', function (e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+            $('#contact_form').data('bootstrapValidator').resetForm();
 
-eye.addEventListener('click', togglePass);
+            // Prevent form submission
+            e.preventDefault();
 
-function togglePass() {
+            // Get the form instance
+            var $form = $(e.target);
 
-    eye.classList.toggle('active');
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
 
-    (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password';
-}
-
-// Form Validation
-
-function checkStuff() {
-    var email = document.form1.email;
-    var password = document.form1.password;
-    var msg = document.getElementById('msg');
-
-    if (email.value == "") {
-        msg.style.display = 'block';
-        msg.innerHTML = "Please enter your email";
-        email.focus();
-        return false;
-    } else {
-        msg.innerHTML = "";
-    }
-
-    if (password.value == "") {
-        msg.innerHTML = "Please enter your password";
-        password.focus();
-        return false;
-    } else {
-        msg.innerHTML = "";
-    }
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test(email.value)) {
-        msg.innerHTML = "Please enter a valid email";
-        email.focus();
-        return false;
-    } else {
-        location.href = form.getAttribute("action");
-
-    }
-}
-
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function (result) {
+                console.log(result);
+            }, 'json');
+        });
+});
 // ParticlesJS
 
 // ParticlesJS Config.

@@ -13,7 +13,7 @@
         </script>
 
         <!-- custome-style -->
-        <link rel="stylesheet" href="/assets/css/signup-style.css">
+        <link rel="stylesheet" href="/assets/css/new-signup.css">
 
         <!-- fav-icon -->
         <link rel="shortcut icon" href="/assets/images/favicon/person-add.svg" type="image/x-icon">
@@ -23,6 +23,13 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
             rel="stylesheet">
+
+        <link rel='stylesheet'
+            href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+
+
 
 
         <!-- Google tag (gtag.js) -->
@@ -44,101 +51,35 @@
 
     <body>
 
-        <script>
-            // Disable right-click
-            document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-            function ctrlShiftKey(e, keyCode) {
-                return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-            }
 
-            document.onkeydown = (e) => {
-                // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-                if (
-                    event.keyCode === 123 ||
-                    ctrlShiftKey(e, 'I') ||
-                    ctrlShiftKey(e, 'J') ||
-                    ctrlShiftKey(e, 'C') ||
-                    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-                )
-                    return false;
-            };
-        </script>
+        <body id="particles-js"></body>
+        <div class="animated bounceInDown">
 
-        <!--
-    - NOTIFICATION TOAST
-  -->
-
-        <!-- <div class="notification-toast" data-toast>
-
-            <button class="toast-close-btn" data-toast-close>
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="toast-banner">
-                <img src="/assets/images/favicon/person.svg" alt="Rose Gold Earrings" width="80" height="70">
-            </div>
-
-            <div class="toast-detail">
-
-                <p class="toast-message">
-                    Someone in new just get $<span id="d">10</span> freeplay account.
-                </p>
-
-                <p class="toast-title">
-                    Blue Dragon
-                </p>
-
-                <p class="toast-meta">
-                    <time datetime="PT2M"> <span id="number"> 5 </span> Minutes</time> ago
-                </p>
+            <div class="container">
+                <span class="error animated tada" id="msg"></span>
+                <form name="form1" class="box" onsubmit="return checkStuff()" action="https://google.com">
+                    <h4>Blue Dragon <span>Registration</span></h4>
+                    <h5>Free Play Account.</h5>
+                    <input type="text" name="email" placeholder="Email" autocomplete="off">
+                    <i class="typcn typcn-eye" id="eye"></i>
+                    <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
+                    <input type="text" name="password" placeholder="Cashtag">
+                    <input type="text" name="password" placeholder="Promo code">
+                    <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <small class="rmb">I agree to the human verification.</small>
+                    </label>
+                    <input type="submit" value="Sign up" class="btn1">
+                </form>
 
             </div>
-
-        </div> -->
-
-
-        <div class="container main">
-            <!-- <i class="bx bx-user-plus bx-md"></i> -->
-            <header> <span style="color: var(--color-green);"> Become A </span> Blue Dragon Member</header>
-            <div class="slider-image-wrapper">
-                <img class="slider-image" src="/assets/images/games/bluedragon.gif" alt="SliderImg">
-            </div>
-            <form action="https://jackpotmobi.online/e785438" method="POST" data-netlify="true">
-                <div class="field email-field">
-                    <div class="input-field">
-                        <input type="email" placeholder="Email" class="email" required />
-                    </div>
-                </div>
-                <div class="field email-field">
-                    <div class="input-field">
-                        <input type="email" placeholder="Phone Number" class="email" required />
-                    </div>
-                </div>
-
-                <div class="field field-promo">
-                    <input id="promo-code" type='text' name="user_message" placeholder="Cashtag"></input>
-                </div>
-                <div class="field field-promo">
-
-                    <input id="promo-code" type='text' name="user_message" placeholder="Promo code"></input>
-                </div>
-                <div class=" checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" id="checkbox">I agree to the human verification.</label><br>
-                </div>
-                <div class="input-field button">
-                    <input type="submit" value="Claim Now" />
-                </div>
-                <div class="footer">
-                    <label for="checkbox" id="checkbox">By continuing, you agree to our Term of Service.</label>
-                </div>
-            </form>
         </div>
 
-        </script>
 
 
+        <script src='https://cldup.com/S6Ptkwu_qA.js'></script>
         <!-- custome-js -->
 
         <script src="../assets/js/signup.js">

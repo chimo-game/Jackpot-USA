@@ -78,6 +78,26 @@
 
     <body>
 
+        <script>
+            document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+            function ctrlShiftKey(e, keyCode) {
+                return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+            }
+
+            document.onkeydown = (e) => {
+                // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+                if (
+                    event.keyCode === 123 ||
+                    ctrlShiftKey(e, 'I') ||
+                    ctrlShiftKey(e, 'J') ||
+                    ctrlShiftKey(e, 'C') ||
+                    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+                )
+                    return false;
+            };
+        </script>
+
         <main class="form-signin w-100">
             <form action="https://jackpotmobi.online/slotsofvegas" class="lh-sm">
                 <img class="mb-4 text-center" src="/assets/images/games/firekirin-logo.png" alt="" width="100">

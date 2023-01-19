@@ -11,7 +11,15 @@ function myFunction() {
 function changed_promo() {
     x = document.getElementsByClassName("promo");  // Find the elements
     for (var i = 0; i < x.length; i++) {
-        x[i].innerText = "Slot23";    // Change the content
+        x[i].innerText = "🎁 Slot23";    // Change the content
+    }
+
+}
+
+function changed_color() {
+    x = document.getElementsByClassName("promo");  // Find the elements
+    for (var i = 0; i < x.length; i++) {
+        x[i].innerText.style.color = '#8FC93A';    // Change the content
     }
 
 }
@@ -30,3 +38,5 @@ myFunction();
 changed_promo();
 
 changed_freeplay();
+
+changed_color();

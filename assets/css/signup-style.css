@@ -1,6 +1,6 @@
 :root {
   --ff-nunito: "Nunito", sans-serif;
-  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-open-sans: "Nunito", sans-serif;
 
   --fs-1: 7rem;
 
@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 body {
   min-height: 100vh;

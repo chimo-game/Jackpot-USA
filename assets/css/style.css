@@ -175,7 +175,8 @@ input,
 
 .h4 {
   color: inherit;
-  font-size: var(--fs-5);
+  text-transform: uppercase;
+  font-size: var(--fs-2);
   font-weight: var(--fw-700);
 }
 

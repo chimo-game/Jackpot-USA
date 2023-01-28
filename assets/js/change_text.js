@@ -3,7 +3,7 @@
 function myFunction() {
     x = document.getElementsByClassName("tag");  // Find the elements
     for (var i = 0; i < x.length; i++) {
-        x[i].innerText = "Claim an account";    // Change the content
+        x[i].innerText = "Create an account";    // Change the content
     }
 
 }
@@ -27,7 +27,7 @@ function changed_color() {
 function changed_freeplay() {
     x = document.getElementsByClassName("freeplay");  // Find the elements
     for (var i = 0; i < x.length; i++) {
-        x[i].innerText = "Free Play $15";    // Change the content
+        x[i].innerText = "";    // Change the content
     }
 
 }

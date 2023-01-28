@@ -25,7 +25,7 @@
   --davys-gray: hsl(0, 0%, 33%);
   --field-drab: hsl(47, 98%, 22%);
   --red-crayola: hsl(356, 73%, 58%);
-  --golden-puppy: #fac400;
+  --golden-puppy: #00d0fa;
   --quick-silver: hsl(0, 0%, 63%);
   --sonic-silver: hsl(0, 0%, 44%);
   --eerie-black-1: hsl(0, 0%, 15%);
@@ -79,6 +79,10 @@ li {
   list-style: none;
 }
 
+.section-header-wrapper {
+  text-align: center;
+}
+
 button {
   color: inherit;
   background: none;
@@ -94,6 +98,7 @@ a,
 span,
 ion-icon {
   display: block;
+  width: 100%;
 }
 
 input {
@@ -110,7 +115,7 @@ html {
 
 body {
   background: var(--rich-black-fogra-39);
-  min-width: 280px;
+  min-width: 380px;
 }
 
 button,

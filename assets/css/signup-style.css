@@ -4,8 +4,8 @@
 
   --fs-1: 7rem;
 
-  --color-green: #fac400;
-  --color-acent: #fac400;
+  --color-green: #357ded;
+  --color-acent: #357ded;
   --color-white: #000000;
   --curve: cubic-bezier(0.42, 0, 0.275, 1.155);
 }
@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fac400;
-  background-image: url("/assets/images/games/bg.jpg");
+  background-image: url("/assets/images/games/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 200ms linear;

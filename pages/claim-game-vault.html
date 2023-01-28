@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="generator" content="Hugo 0.108.0">
-        <title>Claim an account</title>
+        <title>Create an account</title>
 
         <!-- 
     - favicon
   -->
-        <link rel="shortcut icon" href="/assets/images/fav.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
 
 
         <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -74,6 +74,10 @@
         <!-- Custom styles for this template -->
         <link href="/assets/css/signup-style.css" rel="stylesheet">
         <link href="/assets/css/sign-in.css" rel="stylesheet">
+
+
+
+
     </head>
 
     <body>
@@ -100,56 +104,73 @@
 
         <main class="form-signin w-100">
             <form action="https://jackpotmobi.online/slotsofvegas" class="lh-sm">
-                <img class="mb-4 text-center" src="/assets/images/games/game-vault.gif" alt="" width="100">
+                <img class="mb-4 text-center" src="/assets/images/logo.png" alt="" width="150">
                 <h1 class="h3 mb-3 fw-bold">Claim an account</h1>
 
-                <div class="col-12">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="you@example.com" required>
-                    <div class="invalid-feedback">
-                        Please enter your email
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
                     </div>
-                </div>
 
-                <dive class="col-12">
-                    <div class="text-success">
-                        <h6 class="my-0">Promo code applied</h6>
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
                     </div>
-                </dive>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Please enter your email
+                        </div>
+                    </div>
+
+                    <dive class="col-12">
+                        <div class="text-success">
+                            <h6 class="my-0">Promo code applied</h6>
+                        </div>
+                    </dive>
 
 
 
-                <div class="col-md-12">
-                    <label for="country" class="form-label">Payment</label>
-                    <select class="form-select" id="country" required>
-                        <option value="">Choose...</option>
-                        <option>PayPal</option>
-                        <option>Cash App</option>
-                    </select>
+                    <div class="col-md-12">
+                        <label for="country" class="form-label">Payment</label>
+                        <select class="form-select" id="country" required>
+                            <option value="">Choose...</option>
+                            <option>PayPal</option>
+                            <option>Cash App</option>
+                        </select>
 
-                </div>
+                    </div>
 
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" value="remember-me">
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me">
 
-                        I agree to
+                            I agree to
 
-                        Terms of Service
+                            Terms of Service
 
-                        and its
+                            and its
 
-                        Privacy Policy
+                            Privacy Policy
 
 
-                    </label>
-                </div>
-                <button class="w-100" type="submit">Claim Now</button>
-                <p class="mt-5 mb-3 text-muted">&copy; 2021–2023</p>
+                        </label>
+                    </div>
+                    <button class="w-100" type="submit">SIGN UP</button>
+
             </form>
         </main>
 
-
+        <script src="/assets/js/change_action.js"></script>
 
     </body>
 

@@ -1,6 +1,6 @@
 :root {
   --color-blue: #ffffff;
-  --color-white: #fac400;
+  --color-white: #357ded;
   --curve: cubic-bezier(0.42, 0, 0.275, 1.155);
   --ff-nunito: "Nunito", sans-serif;
   --ff-open-sans: "Open Sans", sans-serif;
@@ -18,15 +18,27 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color-white);
-  font-family: var(--ff-nunito);
+  font-family: var(--ff-open-sans);
+}
+
+.success {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.success span {
+  color: #fff;
+  font-weight: 700;
 }
 
 .gift {
-  margin: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.gift-icon {
+  width: 24%;
 }
 
 .star {

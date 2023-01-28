@@ -9,7 +9,7 @@
 /*-----------------------------------*\
  * #CUSTOM PROPERTY 
 \*-----------------------------------*/
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap");
 :root {
   /**
    * colors
@@ -25,7 +25,7 @@
   --davys-gray: hsl(0, 0%, 33%);
   --field-drab: hsl(47, 98%, 22%);
   --red-crayola: hsl(356, 73%, 58%);
-  --golden-puppy: #00d0fa;
+  --golden-puppy: #0075fa;
   --quick-silver: hsl(0, 0%, 63%);
   --sonic-silver: hsl(0, 0%, 44%);
   --eerie-black-1: hsl(0, 0%, 15%);
@@ -36,7 +36,7 @@
    * typography
    */
 
-  --ff-roboto: "Roboto", sans-serif;
+  --ff-roboto: "Kanit", sans-serif;
 
   --fs-1: 32px;
   --fs-2: 20px;
@@ -174,7 +174,7 @@ input,
 }
 
 .h4 {
-  color: inherit;
+  color: var(--golden-puppy);
   text-transform: uppercase;
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
@@ -478,8 +478,10 @@ header .container {
 .tag {
   width: 100%;
   background: var(--golden-puppy);
-  color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
   padding: 15px 20px;
+  letter-spacing: 1.2px;
   border-radius: 4px;
 }
 

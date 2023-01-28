@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap");
+
 :root {
   --ff-nunito: "Nunito", sans-serif;
-  --ff-open-sans: "Nunito", sans-serif;
+
+  --ff-open-sans: "Kanit", sans-serif;
 
   --fs-1: 7rem;
 
@@ -14,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--ff-open-sans);
 }
 body {
   min-height: 100vh;

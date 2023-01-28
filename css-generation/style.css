@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap");
+
 :root {
   --color-blue: #ffffff;
   --color-white: #357ded;
   --curve: cubic-bezier(0.42, 0, 0.275, 1.155);
   --ff-nunito: "Nunito", sans-serif;
-  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-open-sans: "Kanit", sans-serif;
 }
 
 *,

@@ -11,7 +11,7 @@ function myFunction() {
 function changed_promo() {
     x = document.getElementsByClassName("promo");  // Find the elements
     for (var i = 0; i < x.length; i++) {
-        x[i].innerText = "🎁 Slot23";    // Change the content
+        x[i].innerText = "Jackpot";    // Change the content
     }
 
 }

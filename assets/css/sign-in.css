@@ -9,11 +9,40 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fac400;
+  background-image: url("/assets/images/games/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 200ms linear;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  transition: all 200ms linear;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recaptcha {
+  margin-top: 10px;
+  width: 240px;
 }
 
 .form-signin {
-  max-width: 330px;
-  padding: 15px;
+  max-width: 400px;
+  min-width: 380px;
+  padding: 2rem;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.375rem;
+  box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.15);
 }
 
 .form-signin .form-floating:focus-within {
@@ -30,4 +59,26 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+button {
+  color: #fff;
+  background: #357ded;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid #ed3599;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }

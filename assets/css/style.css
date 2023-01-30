@@ -9,6 +9,7 @@
 /*-----------------------------------*\
  * #CUSTOM PROPERTY 
 \*-----------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Oswald:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap");
 :root {
   /**
@@ -36,7 +37,8 @@
    * typography
    */
 
-  --ff-roboto: "Kanit", sans-serif;
+  --ff-roboto: "Barlow", sans-serif;
+  --ff-barlow: "Barlow", sans-serif;
 
   --fs-1: 32px;
   --fs-2: 20px;

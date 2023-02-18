@@ -73,6 +73,23 @@
   box-sizing: border-box;
 }
 
+.section-title {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-text {
+  margin-bottom: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 a {
   text-decoration: none;
 }
@@ -1054,7 +1071,7 @@ header .container {
   .explore-product,
   .top-seller,
   .footer-top {
-    padding: 100px 0;
+    padding: 20px 0;
   }
 
   .section-header-wrapper,

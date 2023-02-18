@@ -330,7 +330,7 @@ header .container {
 
 .new-product {
   background: var(--eerie-black-2);
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 .section-header-wrapper {
@@ -1024,7 +1024,7 @@ header .container {
    */
 
   .hero {
-    padding: 100px 0;
+    padding: 20px 0;
   }
 
   .hero .container {
@@ -1136,6 +1136,10 @@ header .container {
 
   .hero-title,
   .hero-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 30px;
   }
 

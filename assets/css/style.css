@@ -74,6 +74,7 @@
 }
 
 .section-title {
+  gap: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;

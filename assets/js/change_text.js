@@ -3,7 +3,7 @@
 function myFunction() {
     x = document.getElementsByClassName("tag");  // Find the elements
     for (var i = 0; i < x.length; i++) {
-        x[i].innerText = "Create an account";    // Change the content
+        x[i].innerText = "Get Free Play";    // Change the content
     }
 
 }

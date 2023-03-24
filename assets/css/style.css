@@ -91,6 +91,11 @@
   gap: 5px;
 }
 
+.section-title:first-child {
+  animation: bounce;
+  animation-duration: 1s;
+}
+
 a {
   text-decoration: none;
 }

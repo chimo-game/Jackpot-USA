@@ -1,5 +1,6 @@
 :root {
   --ff-roboto: "Roboto", sans-serif;
+  --golden-puppy: #85fa00;
 }
 
 body {
@@ -102,7 +103,7 @@ h4 {
 
 button {
   color: #fff;
-  background: #357ded;
+  background: var(--golden-puppy);
   font-family: inherit;
   padding: 0.6em 1.3em;
   font-weight: 900;

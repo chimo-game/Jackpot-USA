@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
+
+:root {
+  --golden-puppy: #85fa00;
+}
+
 .snow {
   position: absolute;
   z-index: -1;
@@ -10,10 +15,22 @@
   display: grid;
   grid-template-rows: 50% 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/trees.svg) repeat-x;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/trees.svg)
+    repeat-x;
   position: relative;
   width: 100%;
   height: 500px;
+}
+
+.verify {
+  width: 50%;
+  background: var(--golden-puppy);
+  color: var(--black);
+  text-transform: uppercase;
+  padding: 15px 20px;
+  letter-spacing: 1.2px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .merry {

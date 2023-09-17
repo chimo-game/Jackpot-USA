@@ -8,9 +8,10 @@
 
   --fs-1: 7rem;
 
-  --color-green: #357ded;
-  --color-acent: #357ded;
-  --color-white: #000000;
+  --color-green: #85fa00;
+  --color-acent: #85fa00;
+  --golden-puppy: #85fa00;
+  --color-black: #000000;
   --curve: cubic-bezier(0.42, 0, 0.275, 1.155);
 }
 
@@ -79,8 +80,8 @@ body {
 }
 
 button {
-  color: #fff;
-  background: #357ded;
+  color: var(--color-black);
+  background: var(--color-acent);
   font-family: inherit;
   padding: 0.6em 1.3em;
   font-weight: 900;
